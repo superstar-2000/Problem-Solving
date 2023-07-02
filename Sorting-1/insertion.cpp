@@ -8,7 +8,7 @@ void run() {
     #endif
 }
 
-//Stable Algorithm -> Maintains the relative order
+//Stable Algorithm -> Maintains the relative order(equal keys(Stability))
 // TC -> Best Case - O(N), Avg Case - O(N^2), Worst Case - O(N^2)
 void insertionSort(vector<int> &arr) {
 	int n = arr.size();
@@ -20,7 +20,6 @@ void insertionSort(vector<int> &arr) {
 		}
 	}	
 }
-
 
 int main() {
 	run();

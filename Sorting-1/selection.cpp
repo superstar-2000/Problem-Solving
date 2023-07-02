@@ -10,7 +10,8 @@ void run() {
 }
 
 // [7,3,9,10,1,4]  -> [1,3,4,7,9,10]
-
+//TC -> Best Case - O(N^2), Avg Case -> O(N^2), Worst Case -> O(N^2)
+//Unstable Sorting Algo ->  ex -> (4A 5 3 2 4B 1)
 void selectionSort(vector<int> &arr) {
 	int n = arr.size();
 	for(int i = 0; i < n; i++) {
