@@ -15,7 +15,7 @@ void run() {
     
 // [0,1,0,3,12]
 // [1,2,3,4,0,1]
-
+// 1 0 
 void moveZeros(vector<int> &arr) {
     int n = arr.size();
     int i = 0, j = 1;
@@ -28,6 +28,8 @@ void moveZeros(vector<int> &arr) {
         //Move right pointer until we get a non-zero val
         while(j < n && arr[j] == 0) j++;
 
+        //i => points to zero
+        //j => points to non-zero
         if(j <= i) {
             j = i + 1;
         } else {

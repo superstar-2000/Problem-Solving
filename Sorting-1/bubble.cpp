@@ -11,6 +11,7 @@ void run() {
 
 //TC -> Best Case - O(N), Avg Case - O(N^2), Worst Case - O(N^2)
 //Stable Algorithm -> relative order of elements is maintained
+//Stable Algo ->  (relative order of equal elements is maintained as they were in the input) 
 void bubbleSort(vector<int> &arr) {
 	int n = arr.size();
 	

@@ -1,1 +1,5 @@
-2 4 7 9 3 4 
+Low -> 0Mid -> 0High -> 1
+Low -> 0Mid -> 1High -> 2
+Low -> 3Mid -> 3High -> 4
+Low -> 0Mid -> 2High -> 4
+1 2 8 10 12 

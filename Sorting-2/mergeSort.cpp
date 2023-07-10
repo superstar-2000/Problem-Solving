@@ -49,7 +49,8 @@ void mergeSort(vector<int> &arr, int low, int high) {
 	if(low >= high) return;
 	int mid = (low + high) / 2;
 	mergeSort(arr, low, mid);
-	mergeSort(arr, mid + 1, high);	
+	mergeSort(arr, mid + 1, high);
+	cout << "Low -> " << low << "Mid -> " << mid << "High -> " << high << endl;	
 	merge(arr, low, mid, high);
 }
 
