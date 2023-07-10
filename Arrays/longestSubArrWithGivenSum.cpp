@@ -2,7 +2,7 @@
 using namespace std;
 
 
-void run(){
+void run() {
      #ifndef ONLINE_JUDGE
         freopen("input.txt","r",stdin);
         freopen("output.txt","w",stdout);
@@ -51,9 +51,11 @@ int longestSubArrWithSumKBetter(vector<int> &arr, int k) {
 				ans = max(ans, i - mp[preSum]);
 			}
 		}
+		//REMEMBER TO ADD THIS CHECK (EDGE CASES)
 		if(mp.find(prefixSum) == mp.end())
 			mp[prefixSum] = i;
 	}
+	
 	return ans;
 } 
 
@@ -65,7 +67,6 @@ int longestSubArrWithSumKOptimal(vector<int> &arr, int k) {
 	int left = 0, right = -1;
 	long long sum = 0;
 	int maxLen = 0;
-
 	while(right < n) {
 		right++;
 		if(right < n) sum += arr[right];

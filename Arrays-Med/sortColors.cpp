@@ -9,8 +9,8 @@ void run() {
 }
 
 
-//  0     low - 1   low      mid - 1   mid       high             high + 1      n-1
-// [0,0,0, 0      ,  1,1,1,1, 1,      (0,1,2'S UNSORTED)            2,      2,2,2]
+//  0     low - 1   low      mid - 1   mid       high          high + 1      n-1
+// [0,0,0, 0      ,  1,1,1,1, 1,      (0,1,2'S UNSORTED)         2,      2,2,2]
 
 
 // [0.....low - 1] -> 0 (extreme left)
@@ -44,6 +44,7 @@ int main() {
 	for(int i = 0; i < n; i++) {
 		cin >> arr[i];
 	}
-	sortColours(arr);
+	sortColoursOptimal(arr);
+	cout << "O";
 	return 0;
 }
