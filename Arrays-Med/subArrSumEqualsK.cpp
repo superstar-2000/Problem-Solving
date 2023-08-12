@@ -12,19 +12,17 @@ void run() {
 //O(NLOGN) -> Ordered Map
 //SC -> O(N) 
 int subarraySum(vector<int>& arr, int k) {
-   unordered_map<int, int>mp;
-   int n = arr.size(), sum = 0, cnt = 0;
-   for(int i =  0; i < n; i++) {
-      sum += arr[i];
+   unordered_map<int, int> mp;
+   int n = nums.size(), sum = 0, ans = 0;
+   mp[0] = 1;
+   for(int i = 0; i < n; i++) {
+      sum += nums[i];
       if(mp.find(sum - k) != mp.end()) {
-         cnt += mp[sum - k];
-      }
-      if(sum == k) {
-         cnt += 1;
+         ans += mp[sum - k];
       }
       mp[sum]++;
-   }  
-   return cnt;
+   }   
+   return ans;
 }
 
 

@@ -10,10 +10,6 @@ void run() {
 
 
 //2 1 5 4 3 0 0 
-
-
-//[1,2,3] --> 
-// [1,2,3], [1,3,2]
 void nextPermutation(vector<int> &arr) {
 	next_permutation(arr.begin(), arr.end());
 }

@@ -32,7 +32,7 @@ int bestTimeToBuyAndSellStock1Fast(vector<int> &prices) {
 		profit = max(profit, prices[i] - minVal);
 	}
 	return profit;
-}
+} 
 
 int main() {
 	run();

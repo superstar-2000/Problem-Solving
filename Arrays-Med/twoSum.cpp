@@ -8,6 +8,7 @@ void run(){
     #endif
 }
 
+
 //TC -> O(N * N), SC -> O(1)
 vector<int> twoSumBrute(vector<int> &arr, int target) {
 	int n = arr.size();
@@ -31,7 +32,7 @@ vector<int> twoSumBrute(vector<int> &arr, int target) {
 vector<int> twoSumOptimal(vector<int> &arr, int target) {
 	int n = arr.size();
 	unordered_map<int, int> mp;
-	vector<int> ans;
+	vector<int>ans;
 	for(int i = 0; i < n; i++) {
 		if(mp.find(target - arr[i]) != mp.end()) {
 			ans.push_back(mp[target - arr[i]]);

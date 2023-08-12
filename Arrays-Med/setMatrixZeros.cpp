@@ -55,7 +55,6 @@ void setMatrixZerosFast(vector<vector<int>> &arr) {
          if(j == 0) {
             if(arr[i][j] == 0) {
                col0 = 0;
-               arr[i][0] = 0;
             } 
          } else {
             if(arr[i][j] == 0) {
@@ -83,7 +82,6 @@ void setMatrixZerosFast(vector<vector<int>> &arr) {
 int main() {
 	run();
 	int n, m;
-	cin >> n >> m;
    vector<vector<int>>arr(n, vector<int>(m, 0));
    for(int i = 0; i < n; i++) {
       for(int j = 0; j < m; j++) {

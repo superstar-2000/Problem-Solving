@@ -28,7 +28,7 @@ int longestConsecutive(vector<int>& arr) {
    return ans;
 }
 
-//Most Optimal
+//Most Optimal -> 
 //At max 2N iterations -> case -> [1,2,3,4,5,6] in set lets say its
 // stored -> [6,5,4,3,2,1] (Think :)) 
 //TC -> Unordered_Set -> O(N^2) worst case -> Total = O(N) + O(N)

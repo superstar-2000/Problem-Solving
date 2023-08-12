@@ -10,19 +10,25 @@ void run() {
 }
 
 
-//TC -> O(N), SC -> O(1)
+//TC -> O(N) + O(N), SC -> O(1)
 void findMajorityElementOptimal(vector<int> &arr) {
-	int majorityElement = 0, cnt = 0;
+	int majorityElement = 0, cnt = 0,n = arr.size();
 	for(int i = 0; i < n; i++) {
 		if(cnt == 0) {
 			majorityElement = arr[i];
 			cnt = 1;
-		} else {
-			if(majorityElement == arr[i]) cnt++;
-			else cnt--;
-		}
+		} else if(majorityElement == arr[i]) {
+			 cnt++;
+		} else cnt--;
 	}
-	return majorityElement;
+	cnt = 0;
+	//Clarify this que -> Not to be done if the array has the majority ele
+	for(int i = 0; i < n; i++) {
+		if(arr[i] == ele) cnt++;
+		if(cnt > (n / 2)) return ele;
+	}
+	//majority ele doesnt exist
+	return -1;
 }
 
 
